@@ -21,10 +21,11 @@ function mostrarMenu() {
             procurarAbrigo()
             break;
             case '4':
-            console.log('function 4');
+            fecharApp()
             break;
             default:
-            console.log('numero não encontrado');
+            console.log('Opção Inválida')
+            mostrarMenu()
             break;
         
         }
@@ -57,6 +58,7 @@ function listarAbrigos() {
         
         console.log(`${arrayAbrigos[i].codigo} | ${arrayAbrigos[i].nome} | ${arrayAbrigos[i].endereco} | ${arrayAbrigos[i].telefoneAbrigo} | ${arrayAbrigos[i].lotacao} | ${arrayAbrigos[i].cidade}`);
     }
+    mostrarMenu()
 }
 
 function procurarAbrigo() {
@@ -71,5 +73,13 @@ function procurarAbrigo() {
 }
 
 function fecharApp() {
+    let fechar = prompt('Você quer mesmo fechar o APP? [S] ou [N]')
     
+    if (fechar.toLowerCase() === 's') {
+        console.log('Programa Encerrado!');
+    } else if (fechar.toLowerCase() === 'n') {
+        mostrarMenu()
+    } else {
+        fecharApp()
+    }
 }
