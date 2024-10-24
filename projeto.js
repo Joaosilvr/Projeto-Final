@@ -18,7 +18,7 @@ function mostrarMenu() {
             listarAbrigos()
             break;
             case '3':
-            console.log('function 3');
+            procurarAbrigo()
             break;
             case '4':
             console.log('function 4');
@@ -59,4 +59,17 @@ function listarAbrigos() {
     }
 }
 
+function procurarAbrigo() {
+    let cidade = prompt('Qual a cidade que você está procurando?')
 
+    for(let i = 0; i < arrayAbrigos.length; i++){
+            if(arrayAbrigos[i].cidade === cidade) {
+                console.log(`${arrayAbrigos[i].codigo} | ${arrayAbrigos[i].nome} | ${arrayAbrigos[i].endereco} | ${arrayAbrigos[i].telefoneAbrigo} | ${arrayAbrigos[i].lotacao} | ${arrayAbrigos[i].cidade}`);
+            }
+    }
+    mostrarMenu()
+}
+
+function fecharApp() {
+    
+}
