@@ -1,7 +1,5 @@
 let arrayAbrigos = []
 
-mostrarMenu()
-
 function mostrarMenu() {
     let menu = prompt(`===== ABRIGOS TEMPORÁRIOS =====
         1. Cadastrar abrigo
@@ -30,6 +28,8 @@ function mostrarMenu() {
         
         }
 }
+
+mostrarMenu()
 
 function cadastrarAbrigo() {
     let cadAbrigo = {}
