@@ -46,7 +46,7 @@ function cadastrarAbrigo() {
     cadAbrigo.cidade = prompt('cidade do abrigo que deseja adicionar:')
     arrayAbrigos.push(cadAbrigo)
     listarAbrigos()
-    mostrarMenu()
+    
 }
 
 function listarAbrigos() {
