@@ -79,7 +79,5 @@ function fecharApp() {
         console.log('Programa Encerrado!');
     } else if (fechar.toLowerCase() === 'n') {
         mostrarMenu()
-    } else {
-        fecharApp()
     }
 }
